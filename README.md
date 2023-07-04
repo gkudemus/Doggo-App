@@ -19,7 +19,9 @@ techs used:
 2. React Router Dom
 3. Redux tool kit
 4. Axios
-5. TailwindCSS
+5. TailwindCSS (CSS library)
+
+So far I have not used any UI libraries like MaterialUI. :)
 
 How to login? Just provide any values for the username and password 😅
 
