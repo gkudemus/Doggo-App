@@ -24,30 +24,40 @@ techs used:
 Screens:
 
 Homepage
-Web: 
+
+Web:
+
 ![image](https://github.com/gkudemus/Shape-DK/assets/6787094/5f544321-250d-4f9b-896c-33dda2090671)
 
 mobile:
+
 ![image](https://github.com/gkudemus/Shape-DK/assets/6787094/c7501d0e-4f70-4aee-98e0-71605c561574)
 
 Breeds List Page:
 Web:
+
 ![image](https://github.com/gkudemus/Shape-DK/assets/6787094/9c9ce129-3746-461e-94e7-70d13c6f879d)
 
 Mobile:
+
 ![image](https://github.com/gkudemus/Shape-DK/assets/6787094/a1eb2e35-cfd4-4e5a-8150-b5fe6f8d7ea7)
 
 Breeds Gallery:
 Web:
+
 ![image](https://github.com/gkudemus/Shape-DK/assets/6787094/5550ca86-e8a6-4d92-a993-09e3df979481)
 
 Mobile:
+
 ![image](https://github.com/gkudemus/Shape-DK/assets/6787094/9b5fdd4b-6fa5-4170-899d-c5cee9e6e1cc)
 
 Favorite Images:
-Web: ![image](https://github.com/gkudemus/Shape-DK/assets/6787094/66eb6fc1-f411-490a-a3c3-f22b523a1556)
+Web:
+
+![image](https://github.com/gkudemus/Shape-DK/assets/6787094/66eb6fc1-f411-490a-a3c3-f22b523a1556)
 
 mobile:
+
 ![image](https://github.com/gkudemus/Shape-DK/assets/6787094/92ad30fa-f457-42c5-91e7-05b95ee8c830)
 
 
