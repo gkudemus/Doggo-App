@@ -6,6 +6,7 @@ import FavoritesCard from '../components/FavoritesCard'
 const dogBreedFavorites = () => {
   const navigate = useNavigate()
   const [dropDownItems, setDropDownItems] = useState([])
+  const [selected, setSelected] = useState('');
   
   const favoritesData = useSelector(
     state =>  state.dogBreedData.favorites
@@ -17,9 +18,10 @@ const dogBreedFavorites = () => {
   }, [favoritesData])
 
   const [filteredList, setFilteredList] = useState(favoritesData)
+  let newArr = []
 
   const populateDropDown = (data) => {
-    let newArr = []
+    if(newArr.length === 0) newArr.push('Select Breed')
 
     for(let x=0; x < data.length; x++) {
       let deleteRootUrl = data[x].replace('https://images.dog.ceo/breeds/', '')
@@ -40,6 +42,8 @@ const dogBreedFavorites = () => {
     let encodedStrArr = []
     let finalFilteredArr = []
 
+    setSelected(selected)
+
     for(let x = 0; x < favoritesData.length; x++) {
       let encodedURL = encodeURIComponent(favoritesData[x])
       encodedStrArr.push(encodedURL)
@@ -51,17 +55,18 @@ const dogBreedFavorites = () => {
     // this logic/solution is working so far.
   
     const subArr = encodedStrArr.filter(str => str.includes(encodeURIComponent(selected)))
-    console.log(subArr)
 
     for(let x = 0; x < subArr.length; x++) {
-      console.log(subArr[x])
       const convertToSlashes = subArr[x].replaceAll('%2F', '/')
       const convertToColons = convertToSlashes.replaceAll('%3A', ':')
       finalFilteredArr.push(convertToColons)
     }
 
-    console.log(finalFilteredArr)
     setFilteredList(finalFilteredArr)
+  }
+
+  const resetFilter = () => {
+    setFilteredList(favoritesData)
   }
 
   return (
@@ -73,16 +78,19 @@ const dogBreedFavorites = () => {
         </div>
         <div className='flex flex-col'>
           <p><b>Filter by breed:</b></p>
-          <select className='border-2 border-black rounded w-56' placeholder='Please Select Filter' onChange={(e) => dropDownHandler(e)}>
-          {dropDownItems.map((item, index) => {
-            return <option value={item} key={index}>{item}</option>
-          })
-          }
+          <select className='border-2 border-black rounded w-56' value={selected} onChange={(e) => dropDownHandler(e)}>
+            {dropDownItems.map((item, index) => {
+              return <option value={item} key={index}>{item}</option>
+            })
+            }
           </select>
         </div>
         <div className='flex flex-row py-5'>
           <button onClick={() => goBackToHomePage()} className="mr-1 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
             back to Doggo Home Page
+          </button>
+          <button onClick={() => resetFilter()} className="mr-1 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+            Reset Filter
           </button>
         </div>
         <div className="grid grid-cols-3 gap-4">
