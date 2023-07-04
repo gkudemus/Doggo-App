@@ -21,6 +21,8 @@ techs used:
 4. Axios
 5. TailwindCSS
 
+How to login? Just provide any values for the username and password 😅
+
 Screens:
 
 Homepage
