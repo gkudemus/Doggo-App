@@ -51,7 +51,7 @@ Breeds Gallery:
 
 Web:
 
-![image](https://github.com/gkudemus/Shape-DK/assets/6787094/5550ca86-e8a6-4d92-a993-09e3df979481)
+![Uploading image.png…]()
 
 Mobile:
 
@@ -61,7 +61,7 @@ Favorite Images:
 
 Web:
 
-![image](https://github.com/gkudemus/Shape-DK/assets/6787094/b6b8470e-8ec2-4380-8d50-61701184c643)
+![image](https://github.com/gkudemus/Shape-DK/assets/6787094/9431c9ca-b4ef-4397-94ca-291841b423f8)
 
 mobile:
 
