@@ -33,7 +33,7 @@ return (
       <div className='flex flex-col items-center justify-center'>
         <h1 className='text-3xl font-bold px-5 py-5 md:px-10 md:pt-10 pb-5'>Photos about the {selectedBreed}...</h1>
       </div>
-      <div className='flex flex-row pb-5'>
+      <div className='flex flex-row pb-5 px-3 md:px-0'>
         <button onClick={() => goBackToHomePage()} className="mr-1 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
           back to Doggo Home Page
         </button>
