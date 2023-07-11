@@ -20,8 +20,12 @@ const dogBreedFavorites = () => {
   const [filteredList, setFilteredList] = useState(favoritesData)
   let newArr = []
 
+  useEffect(() => {
+    setFilteredList(favoritesData)
+  },[favoritesData])
+
   const populateDropDown = (data) => {
-    if(newArr.length === 0 || filteredList === favoritesData) newArr.push('Select Breed')
+    if(newArr.length === 0) newArr.push('Select Breed')
 
     for(let x=0; x < data.length; x++) {
       let deleteRootUrl = data[x].replace('https://images.dog.ceo/breeds/', '')
@@ -70,6 +74,7 @@ const dogBreedFavorites = () => {
     setSelected(filteredList[0])
   }
 
+  console.log(filteredList)
   return (
     <div className="flex w-full dark:bg-gray-700">
       <div className='w-full flex items-center justify-center'>
@@ -81,7 +86,7 @@ const dogBreedFavorites = () => {
           <p><b>Filter by breed:</b></p>
           <select className='border-2 border-black rounded w-56' value={selected} onChange={(e) => dropDownHandler(e)}>
             {dropDownItems.map((item, index) => {
-              return <option defaultValue={item} key={index}>{item}</option>
+              return <option key={index}>{item}</option>
             })
             }
           </select>
