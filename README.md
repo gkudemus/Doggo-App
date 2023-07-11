@@ -55,7 +55,7 @@ Web:
 
 Mobile:
 
-![image](https://github.com/gkudemus/Shape-DK/assets/6787094/9b5fdd4b-6fa5-4170-899d-c5cee9e6e1cc)
+![image](https://github.com/gkudemus/Shape-DK/assets/6787094/45c0a1d8-2008-4ecc-9783-642f0a7d173a)
 
 Favorite Images:
 
@@ -65,7 +65,8 @@ Web:
 
 mobile:
 
-![image](https://github.com/gkudemus/Shape-DK/assets/6787094/ed295b9f-90f9-4850-87c1-efe326db5377)
+![image](https://github.com/gkudemus/Shape-DK/assets/6787094/61c4a96d-ae2c-49fb-b553-e088c91b79ef)
+
 
 
 
