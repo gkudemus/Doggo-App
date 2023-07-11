@@ -11,9 +11,10 @@ This is a small app that has the following features:
 
 installation:
 
-1. After cloning the repo, just execute yarn install
+1. clone repo
 2. cd my-dogs-app
-3. yarn dev
+3. yarn install
+4. yarn dev
 
 techs used:
 
