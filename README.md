@@ -61,11 +61,12 @@ Favorite Images:
 
 Web:
 
-![image](https://github.com/gkudemus/Shape-DK/assets/6787094/9431c9ca-b4ef-4397-94ca-291841b423f8)
+![image](https://github.com/gkudemus/Shape-DK/assets/6787094/cadb0a32-01d4-48ee-83e8-e5638cd1d2a0)
 
 mobile:
 
-![image](https://github.com/gkudemus/Shape-DK/assets/6787094/61c4a96d-ae2c-49fb-b553-e088c91b79ef)
+![image](https://github.com/gkudemus/Shape-DK/assets/6787094/b51cd279-2e00-4659-ad9a-0e8b65c1d610)
+
 
 
 
