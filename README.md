@@ -55,7 +55,7 @@ Web:
 
 Mobile:
 
-![image](https://github.com/gkudemus/Shape-DK/assets/6787094/45c0a1d8-2008-4ecc-9783-642f0a7d173a)
+![image](https://github.com/gkudemus/Shape-DK/assets/6787094/8a298788-09c8-42eb-86a1-084b253f995e)
 
 Favorite Images:
 
