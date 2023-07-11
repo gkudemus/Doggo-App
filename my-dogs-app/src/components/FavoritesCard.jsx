@@ -13,9 +13,9 @@ const FavoritesCard = ({image}) => {
   }
 
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg">
+    <div className="max-w-sm rounded overflow-hidden shadow-lg p-3 md:p-0">
       <div className='flex flex-col'>
-        <img src={image} className='w-48 h-48' onClick={() => removeFormLikePage(image)}/>
+        <img src={image} className='md:w-56 md:h-56' onClick={() => removeFormLikePage(image)}/>
         <p>{breedName}</p>
       </div>
       <div className='flex flex-col'>

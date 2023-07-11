@@ -21,7 +21,7 @@ const dogBreedFavorites = () => {
   let newArr = []
 
   const populateDropDown = (data) => {
-    if(newArr.length === 0) newArr.push('Select Breed')
+    if(newArr.length === 0 || filteredList === favoritesData) newArr.push('Select Breed')
 
     for(let x=0; x < data.length; x++) {
       let deleteRootUrl = data[x].replace('https://images.dog.ceo/breeds/', '')
@@ -67,20 +67,21 @@ const dogBreedFavorites = () => {
 
   const resetFilter = () => {
     setFilteredList(favoritesData)
+    setSelected(filteredList[0])
   }
 
   return (
     <div className="flex w-full dark:bg-gray-700">
       <div className='w-full flex items-center justify-center'>
-      <div className='flex flex-col h-full bg-sky-50 rounded-md xxs:w-3/5 md:w-1/2 items-center justify-center'>
+      <div className='flex flex-col h-full bg-sky-50 rounded-md w-full md:w-3/4 items-center justify-center'>
         <div className='flex flex-col'>
-          <h1 className='text-3xl font-bold md:px-10 md:pt-10 pb-5'>Favorite Doggo Pics...</h1>
+          <h1 className='text-3xl font-bold px-5 py-5 md:px-10 md:pt-10 pb-5'>Favorite Doggo Pics...</h1>
         </div>
         <div className='flex flex-col'>
           <p><b>Filter by breed:</b></p>
           <select className='border-2 border-black rounded w-56' value={selected} onChange={(e) => dropDownHandler(e)}>
             {dropDownItems.map((item, index) => {
-              return <option value={item} key={index}>{item}</option>
+              return <option defaultValue={item} key={index}>{item}</option>
             })
             }
           </select>
@@ -93,7 +94,7 @@ const dogBreedFavorites = () => {
             Reset Filter
           </button>
         </div>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {filteredList?.map((image, index) => (
           <FavoritesCard key={index} image={image}/>
         ))}
