@@ -1,4 +1,6 @@
-![image](https://github.com/gkudemus/Shape-DK/assets/6787094/c3117777-ad68-42ef-a17a-c68cb9269e58)# Shape-DK
+![image](https://github.com/gkudemus/Shape-DK/assets/6787094/912df834-0bdc-4e4d-baed-465e212a77ad)# Shape-DK
+
+
 
 This is a small app that has the following features:
 
