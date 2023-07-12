@@ -1,7 +1,6 @@
 ![image](https://github.com/gkudemus/Shape-DK/assets/6787094/912df834-0bdc-4e4d-baed-465e212a77ad)# Shape-DK
 
 
-
 This is a small app that has the following features:
 
 1. login screen (fake authentication, I have not integrated a proper integration feature since it's not part of the scope of the assignment)
